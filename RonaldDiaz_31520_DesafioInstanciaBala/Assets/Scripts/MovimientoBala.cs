@@ -18,11 +18,18 @@ public class MovimientoBala : MonoBehaviour
     void Update()
     {
         MovBala();
-
-    }
+       
+      
+    }  
     void MovBala()
     {
         transform.Translate(Direction * Speed * Time.deltaTime);
+       
+    }
+  
 
+    void Destruir()
+    {
+        Destroy(gameObject);
     }
 }
